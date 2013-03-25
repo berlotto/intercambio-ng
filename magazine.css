@@ -1,0 +1,39 @@
+.site-content{
+	width: 100%;
+}
+
+#content{
+	width: 100%;
+}
+
+#left-sidebar{
+	width: 33%;
+	background-color: transparent;
+	float: left;
+}
+
+#right-container{
+        background-color: transparent;
+        float: right;
+        width: 62%;
+}
+
+#right-container > #top{
+	width: 100%;
+	background-color: transparent;
+	margin-bottom: 5px;
+}
+
+#right-container > #left{
+	width: 45%;
+	float: left;
+	background-color: transparent;
+	margin-left: 10px;
+}
+
+#right-container > #right{
+	width: 45%;
+	float: right;
+	background-color: transparent;
+	margin-left: 10px;
+}

@@ -1,0 +1,267 @@
+/*
+Theme Name:     Antropi-NG
+Github Theme URI: https://github.com/berlotto/antropi-ng
+Description:    Antropi theme, child theme for the Twenty Twelve theme
+Author:         Sérgio Berlotto Jr
+Author URI:     http://pythonrs.org
+Template:       twentytwelve
+Version:        1.2.0
+*/
+
+@import url("../twentytwelve/style.css");
+
+hgroup{
+	/*background-image: url('logo.png');*/
+	height: 160px;
+}
+
+hgroup h1, hgroup h2{
+	float: right;
+}
+
+.template-front-page.two-sidebars .widget-area .front-widgets{
+	width: 33%;
+}
+.template-front-page .widget-area .widget:nth-child(2n),
+.template-front-page.two-sidebars .widget-area .front-widgets + .front-widgets{
+	width: 33%;
+}
+
+.entry-header {
+    margin: 0;
+}
+
+.site {
+    overflow: visible;
+}
+
+div.sumula {
+    background-color: #CCCCFF;
+    font-size: 10pt;
+    padding: 30px 30px 5px;
+    text-align: justify;
+}
+
+.entry-header .entry-title {
+    font-size: 2.2em;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #015666;
+    margin-left: -60px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.entry-header .entry-title a {
+    color: white;
+}
+
+h2.data {
+    margin-left: -60px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #015666;
+    display: inline-block;
+}
+
+h2.titulo_aula {
+    margin: 0 0 20px 0;
+}
+
+/* ---- Linha do tempo --- */
+
+#timeline ul li {
+    margin: 0;
+}
+
+/* ---- Catlist ---- */
+
+.lcp_catlist li > a {
+    font-size: 15pt;
+}
+
+.lcp_catlist li {
+    list-style: none;
+}
+
+
+/* Agenda */
+
+.agenda {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #CCC;
+    padding-bottom: 20px;
+    text-align: justify;
+    width: 600px;
+}
+
+
+/* Resenha */
+
+.resenha ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 10px;
+}
+
+.resenha ul li:last-child {
+    border: none;
+}
+
+.resenha ul li a {
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+/* Biblioteca */
+
+.biblioteca ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.biblioteca ul li:last-child {
+    border: none;
+}
+
+.biblioteca ul li a {
+    text-decoration: none;
+}
+
+.post_blog li {
+    list-style: none outside none;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+/* Widgets internas sidebar */
+
+#secondary > aside.widget {
+    background-color: #CCCCFF;
+    padding: 10px;
+    overflow: auto;
+}
+
+#secondary > aside.widget h3 {
+    text-transform: inherit;
+    margin-bottom: 1.1rem;
+    font-size: 10pt;
+}
+
+#secondary > aside.widget > ul li {
+    margin-bottom: 10px;
+}
+
+#secondary >  .widget_listcategorypostswidget > a {
+    color: #21759B;
+    float: right;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.widget-area .widget p {
+    margin: 0;
+}
+
+/* ---------------------- */
+
+.site-content article {
+    margin-bottom: 0;
+}
+.site-content article{
+	margin-bottom: 0px;
+}
+
+/* sanfona */
+
+.snvdshc {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.snvdshc .lcp_catlist > li {
+    margin: 10px;
+    font-size: 0.928571rem;
+}
+
+.snvdshc .ui-widget-content a {
+    color: #222222;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-bottom: 22px;
+    text-decoration: none;
+}
+
+.snvdshc h4.section-title {
+    margin: 2px 0 0;
+    font-weight: bold;
+}
+
+/* Widget capa */
+
+#right-container > #top {
+    position: relative;
+    z-index: 0;
+}
+
+.widget-area .entry-header .entry-title {
+    background-color: none;
+    font-size: 16pt;
+    background-color: transparent;
+    padding: 0;
+    margin-left: 0;
+}
+
+.widget-area .entry-header .entry-title a {
+    color: #21759B;
+}
+
+.widget-area footer.entry-meta {
+    text-align: right;
+}
+
+.category-blog {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+
+.infos li {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.infos li:last-child {
+    margin-right: 0px;
+}
+
+.infos img {
+    margin-bottom: 40px;
+}
+
+.nucleo li {
+    display: block;
+    font-size: 8pt;
+    text-align: left;
+}
+
+.nucleo h3 {
+    font-size: 11pt;
+}
+
+.contact li {
+    text-align: right;
+}
+
+#menu-antropi {
+    text-align: center;
+}
