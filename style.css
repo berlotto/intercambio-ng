@@ -5,47 +5,76 @@ Description:    Antropi theme, child theme for the Twenty Twelve theme
 Author:         Sérgio Berlotto Jr
 Author URI:     http://pythonrs.org
 Template:       twentytwelve
-Version:        1.2.1
+Version:        1.2.2
 */
 
 @import url("../twentytwelve/style.css");
 
 hgroup{
-	height: 160px;
+	height: 200px;
 }
 
 .site-header h1 a{
-    position: relative;
-    top: 10px;
-    left: 20px;
-    width: 50%;
     border-radius: 8px;
-    background-color: rgba(5,5,5,0.7);
+    background-color: rgba(5,5,5,0.5);
     color: #fff;
     padding: 5px;
+    clear: none;
+    margin-bottom: 10px;
 }
 
 .site-header h2 {
-    position: relative;
-    top: 40px;
-    left: 20px;
-    width: 60%;
+    clear: none;
     border-radius: 5px;
-    background-color: rgba(5,5,5,0.7);
+    background-color: rgba(5,5,5,0.5);
     color: #fff;
     font-size: 1.5em;
     padding-left: 5px;
 }
 
-hgroup img {
-    /*float: left;*/
-    position: absolute;
-    top: 0px
-    left: 0px;
+hgroup {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: -134px -7px;
+    background-origin: scroll;
 }
+
+hgroup div.titles{
+    float: left;
+    width: 500px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+hgroup div.logos { float: right; width:400px; font-size:11px; margin-top: 50px;}
+hgroup div.logos ul { list-style:none; margin:0; }
+hgroup div.logos img { float:left; margin-right:10px; }
+hgroup div.logos li { display:block; float:left; width:45%; margin-left:20px; }
+hgroup div.logos p { font-size:12px; color:#666; line-height:14px; }
+hgroup div.logos p.st { font-size:20px; color:#5fbdce; text-align:center; line-height:20px; }
 
 #site-navigation{
     background-image: url('bg_menu.png');
+}
+
+.main-navigation {
+    margin-top: 0px;
+}
+
+.main-navigation div.nav-menu > ul {
+    text-align: center;
+}
+
+.main-navigation .current-menu-item > a, 
+.main-navigation .current-menu-ancestor > a, 
+.main-navigation .current_page_item > a, 
+.main-navigation .current_page_ancestor > a,
+.main-navigation li a{
+    color:#fff;
+}
+
+.main-navigation li, #menu-item-* {
+    margin: 0 2rem 0 0;
 }
 
 body .site{
@@ -300,31 +329,38 @@ h2.titulo_aula {
     text-align: right;
 }
 
-#menu-antropi {
-    text-align: center;
-}
-
 .site-header {
     padding: 0px;
-}
-
-.main-navigation {
-    margin-top: 3.5em;
-    text-align: center;
-}
-
-.main-navigation div.nav-menu > ul {
-    text-align: center;
-}
-
-.main-navigation .current-menu-item > a, 
-.main-navigation .current-menu-ancestor > a, 
-.main-navigation .current_page_item > a, 
-.main-navigation .current_page_ancestor > a,
-.main-navigation li a{
-    color:#fff;
 }
 
 footer[role="contentinfo"] {
     background: none repeat scroll 0 0 #5FBDCE;
 }
+
+
+html body.home div#page.hfeed header#masthead.site-header nav#site-navigation.main-navigation 
+div.menu-antropi-container ul#menu-antropi.nav-menu {
+    text-align: center;
+}
+
+footer.entry-meta { display: none;}
+
+#colophon { background:#5fbdce; border-top:solid 1px #f1f1f1; }
+#colophon .wrapper { padding:15px 20px; }
+#colophon h3 { font-weight:bold; font-size:16px; color:#01566d; margin:5px 0; }
+
+#colophon .social { height:170px; }
+#colophon .social { width:235px; float:left; border-right:dotted 1px #04859d; }
+#colophon .social ul { list-style:none; margin:0; padding:0; height:55px; }
+#colophon .social li { display:block; width:32px; float:left; margin-right:12px; }
+
+#colophon .about { width:500px; float:left; font-size:small; padding-right:20px; }
+#colophon .about img { float:left; margin-left:20px; margin-right:20px; }
+#colophon .about p.nupacs { padding-top:20px; }
+#colophon .about p.contact { margin-left:20px; font-size:x-small; }
+
+#colophon .license { font-size:x-small; }
+#colophon .license p { margin:8px 0; }
+#colophon .license pre { padding:2px 4px; margin:2px 0; background:#01566d;
+                         color:#fff; border:dotted 1px #37b6ce; }
+

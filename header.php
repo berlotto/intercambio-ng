@@ -40,15 +40,29 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
+	<?php $header_image = get_header_image();
+	if ( ! empty( $header_image ) ) : ?>
+		<hgroup style="background-image: url('<?php echo esc_url( $header_image ); ?>');">
+	<?php else: ?>
 		<hgroup>
-			<?php $header_image = get_header_image();
-			if ( ! empty( $header_image ) ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img src="<?php echo esc_url( $header_image ); ?>" alt="" />
-				</a>
-			<?php endif; ?>
+	<?php endif; ?>		
+          <div class="titles">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+		  </div>
+          <div class="logos">
+            <ul>
+              <li>
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/imgs/logo_capes.png">
+                <p>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</p>
+              </li>
+              <li>
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/imgs/logo_fipse.png">
+                <p>Fund for the Improvement of Postsecondary Education</p>
+              </li>
+            </ul>
+            <p class="st"><?php bloginfo('description'); ?></p>
+          </div>
 		</hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

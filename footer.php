@@ -11,29 +11,43 @@
  */
 ?>
 	</div><!-- #main .wrapper -->
-	<footer id="colophon" role="contentinfo">
-            <ul class="infos">
-            <li><img src="wp-content/themes/antropi-ng/ufgrs.png"></li>
-            <li>
-            <ul class="nucleo">
-            <li><h3>Antropologia da Propriedade Intelectual Departamento de Antropologia</h3></li>
-            <li>Instituto de Filosofia e Ciências Humanas</li>
-            <li>Prédio 43311 A – Sala 219</li>
-            <li>Campus Agronomia</li>
-            <li>Av. Bento Gonçalves 9500 - Porto Alegre - RS, 91501-970 </li>
-            <li>Telefone: (51) 3308-6865</li>
-            </ul></li>
-            <li>
-            <ul class="contact">
-            <li>feed de notícias (rss)</li>
-            <li>e-mail institucional:<br>
-             contato@antropi.org<li>
-            <li>assine nossa lista de discussão<br>
-            antropi@ufrgs-listas.br
-            </li>
-            </ul></li>
-            </ul>
-	</footer><!-- #colophon -->
+      <footer id="colophon" role="contentinfo">
+
+        <div class="wrapper">
+          <div class="about">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/imgs/logo_ufrgs.png">
+            <p class="nupacs">
+              Departamento de Antrologia<br>
+              NUPACS &mdash; Núcleo de Pesquisa em Antropologia do Corpo e da Saúde
+            </p>
+
+            <p class="contact">
+              Av. Bento Gonçalves, 9500 – Prédio 43311, Bloco AI, Sala 104A
+              CEP 91509-900 – Porto Alegre, RS, Brasil &mdash;
+              Telefone/fax: +55 (51) 3308-6638<br>
+              ofachelleal@gmail.com
+            </p>
+          </div>
+
+          <div class="license">
+            <p>
+              Todo o conteúdo do site está disponível sobre a licença Creative
+              Commons Attribution 3.0 não adaptada.
+            </p>
+
+            <img src="http://i.creativecommons.org/l/by/3.0/80x15.png">
+
+            <p>
+              O código deste site é livre, licenciado
+              sob <a href="http://www.gnu.org/licenses/agpl.html">Affero
+              GPL</a> </p><p>Acesse pelo nosso <a href="http://git.comum.org/web/p/cf.git">repositório</a>
+            </p>
+          </div>
+
+          <span class="clear"></span>
+        </div>
+
+      </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
