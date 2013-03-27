@@ -1,22 +1,60 @@
 /*
-Theme Name:     Antropi-NG
+Theme Name:     Intercambio-NG
 Github Theme URI: https://github.com/berlotto/intercambio-ng
 Description:    Antropi theme, child theme for the Twenty Twelve theme
 Author:         Sérgio Berlotto Jr
 Author URI:     http://pythonrs.org
 Template:       twentytwelve
-Version:        1.2.0
+Version:        1.2.1
 */
 
 @import url("../twentytwelve/style.css");
 
 hgroup{
-	/*background-image: url('logo.png');*/
 	height: 160px;
 }
 
-hgroup h1, hgroup h2{
-	float: right;
+.site-header h1 a{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 50%;
+    border-radius: 8px;
+    background-color: rgba(5,5,5,0.7);
+    color: #fff;
+    padding: 5px;
+}
+
+.site-header h2 {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: rgba(5,5,5,0.7);
+    color: #fff;
+    font-size: 1.5em;
+    padding-left: 5px;
+}
+
+hgroup img {
+    /*float: left;*/
+    position: absolute;
+    top: 0px
+    left: 0px;
+}
+
+#site-navigation{
+    background-image: url('bg_menu.png');
+}
+
+body .site{
+    padding: 0px;
+}
+
+#main {
+    margin-right: 3em;
+    margin-left: 3em;
 }
 
 .template-front-page.two-sidebars .widget-area .front-widgets{
@@ -264,4 +302,29 @@ h2.titulo_aula {
 
 #menu-antropi {
     text-align: center;
+}
+
+.site-header {
+    padding: 0px;
+}
+
+.main-navigation {
+    margin-top: 3.5em;
+    text-align: center;
+}
+
+.main-navigation div.nav-menu > ul {
+    text-align: center;
+}
+
+.main-navigation .current-menu-item > a, 
+.main-navigation .current-menu-ancestor > a, 
+.main-navigation .current_page_item > a, 
+.main-navigation .current_page_ancestor > a,
+.main-navigation li a{
+    color:#fff;
+}
+
+footer[role="contentinfo"] {
+    background: none repeat scroll 0 0 #5FBDCE;
 }
